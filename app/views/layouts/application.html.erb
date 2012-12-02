@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SFHN - The Official San Francisco Hacker News Site</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= render 'shared/hero' %>
+
+<div class="main container">
+  <div class="yield">
+    <%= yield %>
+  </div>
+  <%= render 'shared/info' %>
+</div><!-- /container -->
+<%= render 'shared/footer' %>
+</body>
+</html>

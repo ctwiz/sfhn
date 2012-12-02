@@ -1,0 +1,33 @@
+// Place all the styles related to the events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.events {
+  .delimiter {
+    font-size: 12pt;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #F6F6EF;
+
+  }
+  .event, .no_events { 
+    margin: 0px 5px 30px 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D7d7d7;
+    .head {
+      font-size: 12pt;
+      margin-bottom: 10px;
+    }
+    .body {
+      font-size: 10pt;
+      margin-left: 10px;
+      .info {
+        margin-bottom: 10px;
+      }
+    }
+    .detail {
+      margin-left: 10px;
+    }
+  }
+}
