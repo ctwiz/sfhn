@@ -11,6 +11,8 @@ Sfhn::Application.routes.draw do
 
   match "api/add_to_newsletter" => "api#add_to_newsletter"
 
+  match "campaign/" => "campaign#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
