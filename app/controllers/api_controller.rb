@@ -21,8 +21,7 @@ class ApiController < ApplicationController
       quantity = line[5]
 
       User.create(:email => email, :signup_date => signup_date, :last_name => last_name, :first_name => first_name, :email => email, :quantity => quantity)
-      render :nothing => true
     end
-
+    render :nothing => true
   end
 end
