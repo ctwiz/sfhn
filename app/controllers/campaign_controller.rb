@@ -5,4 +5,7 @@ class CampaignController < ApplicationController
   def hackers
     render :layout => false
   end
+  def movie2poll
+    render :layout => false
+  end
 end

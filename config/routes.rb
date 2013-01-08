@@ -13,6 +13,7 @@ Sfhn::Application.routes.draw do
 
   match "campaign/1" => "campaign#index"
   match "campaign/2" => "campaign#hackers"
+  match "campaign/3" => "campaign#movie2poll"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
