@@ -8,4 +8,7 @@ class CampaignController < ApplicationController
   def movie2poll
     render :layout => false
   end
+  def movie2
+    render :layout => false
+  end
 end
