@@ -11,4 +11,7 @@ class CampaignController < ApplicationController
   def movie2
     render :layout => false
   end
+  def sfhn2
+    render :layout => false
+  end
 end
