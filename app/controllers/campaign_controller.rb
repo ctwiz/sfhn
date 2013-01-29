@@ -14,4 +14,7 @@ class CampaignController < ApplicationController
   def sfhn2
     render :layout => false
   end
+  def meeting2
+    render :layout => false
+  end
 end
