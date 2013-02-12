@@ -11,12 +11,7 @@ Sfhn::Application.routes.draw do
 
   match "api/add_to_newsletter" => "api#add_to_newsletter"
 
-  match "campaign/1" => "campaign#index"
-  match "campaign/2" => "campaign#hackers"
-  match "campaign/3" => "campaign#movie2poll"
-  match "campaign/4" => "campaign#movie2"
-  match "campaign/5" => "campaign#sfhn2"
-  match "campaign/6" => "campaign#meeting2"
+  match "campaign/:id", :to => redirect("/campaigns/%{id}")
 
   resources :campaigns, :controller => 'campaign'
 
