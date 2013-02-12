@@ -18,6 +18,8 @@ Sfhn::Application.routes.draw do
   match "campaign/5" => "campaign#sfhn2"
   match "campaign/6" => "campaign#meeting2"
 
+  resources :campaigns, :controller => 'campaign'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
