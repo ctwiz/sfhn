@@ -15,10 +15,13 @@
 //= require twitter/bootstrap
 //= require_tree .
 $(function()  {
-  $(".email .btn").click(function() {
-    var email = $(".email input[type=text]").val();
+  var email = $(".email input[type=text]").val();
+  var add_to_newsletter = function() {
     $.post("/api/newsletter", { email : email }, function(data) {
-      $("#email_thanks").modal(); 
+      $("#email_thanks").modal();
     });
-  });
+    return false;
+  };
+  $(".email .btn").click(add_to_newsletter);
+  $("form#newsletter").submit(add_to_newsletter);
 });
