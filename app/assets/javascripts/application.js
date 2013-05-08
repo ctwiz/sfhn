@@ -13,12 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require_tree .
+//= require_tree
 $(function()  {
-  var email = $(".email input[type=text]").val();
   var add_to_newsletter = function() {
+    $("#email_thanks").modal();
+    var email = $(".email input[type=text]").val();
+    $(".email input[type=text]").val('');
     $.post("/api/newsletter", { email : email }, function(data) {
-      $("#email_thanks").modal();
     });
     return false;
   };
