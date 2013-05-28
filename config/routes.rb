@@ -15,6 +15,8 @@ Sfhn::Application.routes.draw do
 
   resources :campaigns, :controller => 'campaign'
 
+  match 'newsletter/' => redirect("http://eepurl.com/z1ILX")
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
